@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer in Brasilian</title>
+</head>
+
+<body>
+    <script>
+        function mosta(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+        function pulaLinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+        function calculaPontos(pontos) {
+            var pontos = vitorias * 3 + empate;
+            return pontos;
+        }
+        var vitorias = parseInt(prompt("Digite o números de vitória bb: "));
+        var empate = parseInt(prompt("Digite o número de empates meu chegado: "));
+        //var derrotas = prompt("Digite o número de derrotas nenem: ");
+
+        mosta("os ponto do seu time é" + pontos);
+        if (pontos > 20) {
+            document.write("seu time foi melhor que anos passado.");
+        } else {
+            mostra("Seu time foi pior do que o ano passado.")
+        } if (pontos == 20) {
+            mostra("Seu time está igual ano passado");
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

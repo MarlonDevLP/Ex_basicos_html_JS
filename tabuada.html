@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+
+<body>
+    <script>
+        function mosta(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+        function pulaLinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+        for (i = 0; i <= 10; i++) {
+            tb = 7 * 1;
+            document.write(tb + " " + "x" + " " + i + "<br>");
+
+        }
+        contador = 0;
+        while (contador <= 9) {
+            contador++;
+            var num = 7 * contador;
+            document.write(num + " " + "x" + " " + contador + "<br>");
+        } 
+    </script>
+</body>
+
+</html>

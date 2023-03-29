@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type=" ">
+    <button>Compare com meu secret</button>
+    <script>
+        function sorteia() {
+            return Math.round(Math.random() * 10);
+        }
+        function sorteaNumero(quantidade) {
+            var segredos = [];
+            var numero = 1;
+            while (numero <= quantidade) {
+                var numAleatorio = sorteia();
+                if(numAleatorio != 0){
+                var achou = false;
+
+                for(var i = 0; i < segredos.length; i++){
+                    if(segredos[i] == numAleatorio){
+                        achou = true;
+                        break;
+                    }
+                    if(achou == false){
+                        segredos.push(numAleatorio);
+                            numero++;
+                    }
+                }
+                segredos.push(sorteia(quantidade));
+            }
+        }
+        
+            return segredos;
+        }
+        var segredos = sorteaNumero(5);
+        console.log
+        //var secret = Math.round(Math.random() * 10);
+        var input = document.querySelector("input");
+        input.focus();
+        function teste() {
+            var achou = true;
+            for (var i = 0; i < segredos.length; i++) {
+                if (input.value == segredos[i]) {
+                alert("Acertou miseravi");
+                break;
+                }else {
+                    alert("Errouuuu!!!");
+                }
+            }
+            if(achou == false){
+                alert("Você errou todas")
+
+            }
+            input.value = " ";
+            input.focus();
+        }
+        var button = document.querySelector("button");
+        button.onclick = teste;
+
+
+
+    </script>
+</body>
+
+</html>

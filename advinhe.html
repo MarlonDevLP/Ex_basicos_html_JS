@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advinhe</title>
+</head>
+
+<body>
+    <script>
+        function mosta(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+        function pulaLinha() {
+            document.write("<br>");
+
+        }
+        var numPensado = Math.round(Math.random() * 10);
+        var numeroDigitado = 0;
+        contador = 1;
+        while (contador <= 3) {
+            var numeroDigitado = parseInt(prompt("Digita teu bicudo nego véiu: "));
+            if (numeroDigitado == numPensado) {
+                document.write("Acertou miseravi " + numPensado + " na tentativa " + contador + "<br>");
+                break;
+            } else {
+                document.write("Tu errou manito o numero " + numeroDigitado + " na tentativa " + contador + "<br>");
+
+            }
+            contador++;
+
+        }
+        mosta("FIM");
+    </script>
+</body>
+
+</html>
